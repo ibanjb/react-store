@@ -1,0 +1,23 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "ecmaFeatures": {
+    "classes": true,
+    "jsx": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    "__DEV__": true
+  },
+  "rules": {
+    "import/no-unresolved": [0],
+    "no-underscore-dangle": [0],
+    "global-require": [0],
+    "react/jsx-quotes": 0,
+    "jsx-quotes": [2, "prefer-double"],
+    "react/jsx-indent-props": [0],
+    "react/prefer-stateless-function": [0]
+  }
+}

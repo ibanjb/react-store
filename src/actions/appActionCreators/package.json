@@ -1,0 +1,6 @@
+{
+  "name": "appActionCreators",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./appActionCreators.js"
+}

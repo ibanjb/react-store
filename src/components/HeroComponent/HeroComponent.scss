@@ -1,0 +1,11 @@
+@import '../../assets/styles/variables.scss';
+
+.HeroComponent{
+  margin-top: 20px;
+  background: $light-blue;
+  height: 400px;
+  width: 100%;
+  .RaisedButton {
+    margin: 10px 0 0 10px;
+  }
+}
