@@ -1,12 +1,8 @@
 @import '../../assets/styles/variables.scss';
 
-.HeroComponent{
+.StoryTellerComponent{
   margin-top: 20px;
   background: $light-blue;
-  .RaisedButton {
-    margin: 10px 0 0 500px;
-  }
-  .chip{
-    margin: 4px;
-  }
+  height: 200px;
+  width: 100%;
 }

@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { HeroComponent } from 'components';
+import { HeroComponent, StoryTellerComponent } from 'components';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui/Toolbar';
 
@@ -17,7 +17,6 @@ export class ShopView extends Component {
             <ToolbarTitle text="Toolbar group" />
           </ToolbarGroup>
         </Toolbar>
-        <HeroComponent />
       </div>
     );
   }
@@ -27,6 +26,8 @@ export class ShopView extends Component {
       <MuiThemeProvider>
         <div>
           {this._renderToolbar()}
+          <HeroComponent />
+          <StoryTellerComponent />
         </div>
       </MuiThemeProvider>
     );
