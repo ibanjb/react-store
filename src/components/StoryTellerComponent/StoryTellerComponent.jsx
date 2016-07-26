@@ -14,4 +14,5 @@ export class StoryTellerComponent extends Component {
     );
   }
 }
+
 export default StoryTellerComponent;

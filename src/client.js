@@ -5,9 +5,6 @@ import { render } from 'react-dom';
 import Immutable from 'immutable';
 import configureStore from './store/configureStore';
 import { Root } from 'containers';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-
-injectTapEventPlugin();
 
 ((window) => {
   const initialState = window.__INITIAL_STATE__ && Immutable.fromJS(window.__INITIAL_STATE__);
