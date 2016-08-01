@@ -1,0 +1,109 @@
+body, h1, h2, h3 {
+    font-family: 'Montserrat', 'Helvetica', 'Arial', 'sans-serif';
+}
+body::before {
+    /* background-image: url('../images/bg_generic.jpg'); */
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+}
+h1 {
+    margin-top: 0px;
+}
+img {
+    width: 100%;
+    vertical-align: middle;
+    min-height: 100%;
+}
+.image--zoom img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.image--zoom:hover img {
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+}
+.absolute {
+    position: absolute;
+}
+.mdl-layout-title {
+    font-family: 'Indie Flower', 'Helvetica', 'Arial', 'sans-serif';
+    font-size: 3em;
+}
+.mdl-card__media{
+    overflow: hidden;
+}
+.hero-section {
+    /*
+    background: saddlebrown;
+    background: -webkit-linear-gradient(left, saddlebrown , navajowhite);
+    background: -o-linear-gradient(right, saddlebrown, navajowhite);
+    background: -moz-linear-gradient(right, saddlebrown, navajowhite);
+    background: linear-gradient(to right, saddlebrown , navajowhite);
+    */
+    background: url('../images/hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8; }
+
+.hero-title {
+    font-family: 'Indie Flower', 'Helvetica', 'Arial', 'sans-serif';
+}
+.hero-butonContainer{
+    text-align: center;
+}
+.hero-button {
+    top: -20px;
+}
+.offers {
+    padding-top: 20px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../images/bg_coffee.jpg');
+    z-index: -1;
+}
+.layout-transparent .mdl-layout__header,
+.layout-transparent .mdl-layout__drawer-button {
+    color: saddlebrown;
+}
+.video-parent {
+    z-index: 90;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.video-content {
+    height: 500px;
+    float: left;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+}

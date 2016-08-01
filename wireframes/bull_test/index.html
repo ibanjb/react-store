@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta definitions -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Testing with Material Design Lite">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <!-- title -->
+    <title>Bull test wireframe</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/windows-desktop.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- styles -->
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body onload="initVideo()">
+    <div class="layout-transparent mdl-layout mdl-js-layout">
+        <!-- header -->
+        <header class="mdl-layout__header mdl-layout__header--transparent absolute">
+            <div class="mdl-layout__header-row ">
+                <!-- Title -->
+                <span class="mdl-layout-title">Want a coffee?</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <span style="color: saddlebrown;">Account</span>
+                    <a class="mdl-navigation__link" href="#account">
+                        <i class="material-icons" style="color: saddlebrown;">account_circle</i>
+                    </a>
+                    <span style="color: saddlebrown;">Cart</span>
+                    <a class="mdl-navigation__link" href="#shoppingCart">
+                        <i class="material-icons" style="color: saddlebrown;">shopping_cart</i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title" style="margin-top: 20px;">
+                <img src="images/logo.png" alt="Logo company" />
+            </span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">This is an option</a>
+                <a class="mdl-navigation__link" href="">Another option</a>
+                <a class="mdl-navigation__link" href="">One more option</a>
+                <a class="mdl-navigation__link" href="">The last option</a>
+            </nav>
+        </div>
+        <!-- main content -->
+        <main class="mdl-layout__content">
+            <!-- Hero section -->
+            <div class="hero-section">
+                <!--
+                <div class="hero-text mdl-typography--text-center">
+                    <h1 class="mdl-typography--display-2 hero-title">Coffe online shop</h1>
+                    <p class="mdl-typography--display-1 hero-title">
+                        Hot, flavour, smooth...
+                    </p>
+                </div>
+                -->
+            </div>
+
+            <div class="mdl-typography--display-1-color-contrast">Creating new sensations</div>
+                <div class="content-grid mdl-grid">
+                    <!-- video container -->
+                    <div class=" video-parent">
+                        <div id="video-content" class="content-column mdl-cell--hide-phone mdl-cell--stretch video-content">
+                            <video autoplay="true" loop="true" class="fillWidth mdl-cell--stretch">
+                                <source src="http://thegirlandthebull.com/wp-content/themes/tgatb-wp/vid/vid.mp4" type="video/mp4">
+                                <source src="http://thegirlandthebull.com/wp-content/themes/tgatb-wp/vid/vid.ogv" type="video/ogg">
+                                <source src="http://thegirlandthebull.com/wp-content/themes/tgatb-wp/vid/vid.webm" type="video/webm">
+                                Your browser does not support the video tag. I suggest you upgrade your browser.
+                            </video>
+                        </div>
+                        <div class="content-column mdl-cell--hide-desktop mdl-cell--hide-tablet mdl-cell--stretch">
+                            <img class="mdl-cell--stretch" src="images/phoneVideoPoster.jpg" alt="Alt image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-typography--display-1-color-contrast">... offering directly to our Coffee shop</div>
+                <div class="content-grid mdl-grid offers">
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--2-col-phone">
+                        <div class="mdl-card__media image">
+                            <div class="image--zoom">
+                                <img src="images/tea.png" alt="alt">
+                            </div>
+                        </div>
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Cup of tea</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia...
+                        </div>
+                        <div class="mdl-card__actions- mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--2-col-phone">
+                        <div class="mdl-card__media">
+                            <div class="image--zoom">
+                                <img src="images/coffee1.jpg" alt="alt">
+                            </div>
+                        </div>
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Coffee cream</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia...
+                        </div>
+                        <div class="mdl-card__actions- mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--2-col-phone">
+                        <div class="mdl-card__media">
+                            <div class="image--zoom">
+                                <img src="images/coffee2.jpg" alt="alt">
+                            </div>
+                        </div>
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Cakes</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia...
+                        </div>
+                        <div class="mdl-card__actions- mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--2-col-phone">
+                        <div class="mdl-card__media image">
+                            <div class="image--zoom">
+                                <img src="images/coffee3.jpg" alt="alt">
+                            </div>
+                        </div>
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Cupcakes</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia...
+                        </div>
+                        <div class="mdl-card__actions- mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- footer -->
+            <footer class="mdl-mini-footer mdl-layout__header--transparent">
+                <div>
+                    <span>footer </span>
+                </div>
+            </footer>
+        </main>
+    </div>
+<!-- scripts injecting -->
+<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+<script type="text/javascript">
+
+    // just a workaround, need to investigate
+    // the css class "mdl-js-layout" breaks the autoplay property on video so we need to manual fire it
+    function initVideo() {
+        setTimeout(function() {
+            var videoKillTheRadioStar = document.getElementById("video-content");
+            videoKillTheRadioStar.children[0].play();
+        }, 200);
+    }
+</script>
+
+</body>
+</html>
