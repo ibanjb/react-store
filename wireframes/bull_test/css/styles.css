@@ -39,6 +39,16 @@ img {
 .absolute {
     position: absolute;
 }
+
+.info-icons{
+    display: inline-block;
+    margin-right: 20px;
+    color: saddlebrown;
+}
+.info-text {
+    display: inline-block;
+}
+
 .mdl-layout-title {
     font-family: 'Indie Flower', 'Helvetica', 'Arial', 'sans-serif';
     font-size: 3em;
