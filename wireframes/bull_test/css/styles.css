@@ -64,7 +64,7 @@ img {
     background: -moz-linear-gradient(right, saddlebrown, navajowhite);
     background: linear-gradient(to right, saddlebrown , navajowhite);
     */
-    background: url('../images/hero.jpg') no-repeat center center;
+    background: url('../images/people.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
 }
@@ -128,7 +128,7 @@ img {
 }
 
 .arrows path {
-    stroke: saddlebrown;
+    stroke: white;
     fill: transparent;
     stroke-width: 5px;
     animation: arrow 2s infinite;
