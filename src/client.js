@@ -5,6 +5,7 @@ import { render } from 'react-dom';
 import Immutable from 'immutable';
 import configureStore from './store/configureStore';
 import { Root } from 'containers';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 ((window) => {
   const initialState = window.__INITIAL_STATE__ && Immutable.fromJS(window.__INITIAL_STATE__);
@@ -15,5 +16,5 @@ import { Root } from 'containers';
     app.id = 'react-view';
     window.document.body.appendChild(app);
   }
-  render(<Root store={store} />, app);
+  render(<MuiThemeProvider><Root store={store} /></MuiThemeProvider>, app);
 })(window);

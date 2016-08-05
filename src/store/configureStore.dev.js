@@ -5,16 +5,16 @@ import rootReducer from 'reducers';
 import DevTools from 'containers/DevTools';
 
 const finalCreateStore = compose(
-  DevTools.instrument(),
-  persistState(
-    window.location.href.match(
-      /[?&]debug_session=([^&#]+)\b/
+    DevTools.instrument(),
+    persistState(
+        window.location.href.match(
+            /[?&]debug_session=([^&#]+)\b/
+        )
     )
-  )
 )(createStore);
 
 const createStoreWithMiddleware = applyMiddleware(
-  promiseMiddleware
+    promiseMiddleware
 )(finalCreateStore);
 
 export default function configureStore(initialState) {
@@ -22,8 +22,8 @@ export default function configureStore(initialState) {
 
   if (module.hot) {
     module.hot.accept('../reducers', () =>
-      store.replaceReducer(require('../reducers').default)
-    );
+    store.replaceReducer(require('../reducers').default)
+  );
   }
 
   return store;

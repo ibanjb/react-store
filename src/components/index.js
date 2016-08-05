@@ -1,2 +1,1 @@
-export HeroComponent from './HeroComponent';
-export StoryTellerComponent from './StoryTellerComponent';
+export HeaderComponent from './HeaderComponent';

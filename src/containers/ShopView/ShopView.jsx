@@ -1,35 +1,16 @@
 import React, { Component, PropTypes } from 'react';
-import { HeroComponent, StoryTellerComponent } from 'components';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui/Toolbar';
-
+import { HeaderComponent } from 'components';
 
 export class ShopView extends Component {
   static propTypes = {
     actions: PropTypes.object,
   };
 
-  _renderToolbar() {
-    return (
-      <div>
-        <Toolbar>
-          <ToolbarGroup>
-            <ToolbarTitle text="Toolbar group" />
-          </ToolbarGroup>
-        </Toolbar>
-      </div>
-    );
-  }
-
   render() {
     return (
-      <MuiThemeProvider>
-        <div>
-          {this._renderToolbar()}
-          <HeroComponent />
-          <StoryTellerComponent />
-        </div>
-      </MuiThemeProvider>
+      <div>
+        <HeaderComponent />
+      </div>
     );
   }
 }
