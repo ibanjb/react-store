@@ -16,10 +16,10 @@ export class HeaderComponent extends Component {
     this.state = {
       openMenuDrawer: false,
     };
-    this.handleDrawerVisiblity = this.handleDrawerVisiblity.bind(this);
+    this.handleDrawerVisibility = this.handleDrawerVisibility.bind(this);
   }
 
-  handleDrawerVisiblity() {
+  handleDrawerVisibility() {
     const { openMenuDrawer: visible } = this.state || false;
     this.setState({ openMenuDrawer: !visible });
   }
@@ -29,10 +29,15 @@ export class HeaderComponent extends Component {
         <div>
           <AppBar
             title="Title"
-            onLeftIconButtonTouchTap={this.handleDrawerVisiblity}
+            onLeftIconButtonTouchTap={this.handleDrawerVisibility}
           />
         </div>
-        <Drawer open={this.state.openMenuDrawer}>
+        <Drawer
+              docked={false}
+              width={200}
+              open={this.state.openMenuDrawer}
+              onRequestChange={this.handleDrawerVisibility}
+        >
           <MenuItem>Menu Item</MenuItem>
           <MenuItem>Menu Item 2</MenuItem>
         </Drawer>
