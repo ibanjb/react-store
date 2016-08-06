@@ -1,5 +1,5 @@
 # react-store
-React+Redux+Webpack
+React+Redux+Material-UI+Webpack
 
 ### Table of Contents
 1. [Installation](#installation)
