@@ -1,0 +1,16 @@
+.HeaderComponent {
+  position:fixed;
+  width: 99%;
+  z-index: 2;
+  img {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+.HeaderComponent--AppBar {
+  background-color: transparent !important;
+}
+.HeaderComponent--Badge {
+  padding: 0 !important;
+}

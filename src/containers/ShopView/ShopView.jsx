@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import { HeaderComponent } from 'components';
+import { HeaderComponent, VideoComponent, FooterComponent } from 'components';
+import './ShopView.scss';
 
 export class ShopView extends Component {
   static propTypes = {
@@ -10,6 +11,8 @@ export class ShopView extends Component {
     return (
       <div>
         <HeaderComponent />
+        <VideoComponent />
+        <FooterComponent />
       </div>
     );
   }
