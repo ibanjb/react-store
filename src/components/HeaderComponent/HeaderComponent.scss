@@ -7,10 +7,12 @@
     width: 100%;
     text-align: center;
   }
+  &--AppBar {
+    background-color: transparent !important;
+  }
+  &--Badge {
+    padding: 0 !important;
+  }
 }
-.HeaderComponent--AppBar {
-  background-color: transparent !important;
-}
-.HeaderComponent--Badge {
-  padding: 0 !important;
-}
+
+
