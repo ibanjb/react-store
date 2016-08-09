@@ -52,7 +52,7 @@
     "babel-polyfill": "6.5.0",
     "babel-preset-react": "6.5.0",
     "bloodhound-js": "1.2.1",
-    "classnames": "2.2.1",
+    "classnames": "^2.2.1",
     "express": "4.13.4",
     "immutable": "3.7.6",
     "material-ui": "^0.15.3",

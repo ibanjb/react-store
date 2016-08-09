@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { HeaderComponent, FooterComponent } from 'components';
 
-class Product extends Component {
+class Shop extends Component {
   static propTypes = {
     actions: PropTypes.object,
   };
@@ -14,11 +14,11 @@ class Product extends Component {
         <br />
         <br />
         <br />
-        <h1> Product page</h1>
+        <h1> Shop page</h1>
         <FooterComponent />
       </div>
     );
   }
 }
 
-export default Product;
+export default Shop;

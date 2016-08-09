@@ -10,10 +10,10 @@ class Home extends Component {
     const { actions } = this.props;
     return (
       <div>
-        <HeaderComponent actions={actions} />
+        <HeaderComponent actions={actions} doScroll />
         <VideoComponent />
-        <FooterComponent />
         <h1> Home page</h1>
+        <FooterComponent />
       </div>
     );
   }

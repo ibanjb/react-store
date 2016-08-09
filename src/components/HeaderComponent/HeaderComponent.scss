@@ -13,6 +13,9 @@
   &--Badge {
     padding: 0 !important;
   }
+  a:-webkit-any-link {
+    text-decoration: none;
+  }
 }
 
 

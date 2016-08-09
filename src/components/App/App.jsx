@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react';
-import styles from './App.scss';
 
 export default class App extends Component {
   static propTypes = {
@@ -8,7 +7,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className={styles.container}>
+      <div>
         {this.props.children}
       </div>
     );

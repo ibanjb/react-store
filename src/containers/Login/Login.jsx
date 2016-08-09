@@ -10,7 +10,10 @@ class Login extends Component {
     const { actions } = this.props;
     return (
       <div>
-        <HeaderComponent actions={actions} />
+        <HeaderComponent actions={actions} doScroll={false} />
+        <br />
+        <br />
+        <br />
         <h1>Login page</h1>
         <FooterComponent />
       </div>
