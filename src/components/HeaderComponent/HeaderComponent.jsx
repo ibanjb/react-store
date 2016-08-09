@@ -106,7 +106,7 @@ export class HeaderComponent extends Component {
                   />
                 </IconButton>
                 <Badge
-                  badgeContent={10}
+                  badgeContent={2}
                   primary
                   className="HeaderComponent--Badge"
                 >

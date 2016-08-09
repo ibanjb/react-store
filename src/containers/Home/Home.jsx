@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { HeaderComponent, VideoComponent, FooterComponent } from 'components';
+import { HeaderComponent, VideoComponent, OffersComponent, FooterComponent } from 'components';
 
 class Home extends Component {
   static propTypes = {
@@ -13,6 +13,7 @@ class Home extends Component {
         <HeaderComponent actions={actions} doScroll />
         <VideoComponent />
         <h1> Home page</h1>
+        <OffersComponent />
         <FooterComponent />
       </div>
     );
