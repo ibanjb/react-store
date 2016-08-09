@@ -7,6 +7,8 @@ import IconButton from 'material-ui/IconButton';
 import ActionShoppingCart from 'material-ui/svg-icons/action/shopping-cart';
 import ActionAccountCircle from 'material-ui/svg-icons/action/account-circle';
 import { red500, grey50 } from 'material-ui/styles/colors';
+import { IndexLink, Link } from 'react-router';
+
 import './HeaderComponent.scss';
 
 export class HeaderComponent extends Component {
@@ -80,6 +82,15 @@ export class HeaderComponent extends Component {
               onRequestChange={this.handleDrawerVisibility}
         >
           <img src="http://famouslogos.net/images/fashion-logos/abercrombie-and-fitch-logo.jpg" alt="todo" />
+          <MenuItem>
+            <IndexLink to="/">Home</IndexLink>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/product">Product</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/login">Login</Link>
+          </MenuItem>
           <MenuItem>Shop</MenuItem>
           <MenuItem>Lookbook</MenuItem>
           <MenuItem>Blog</MenuItem>
