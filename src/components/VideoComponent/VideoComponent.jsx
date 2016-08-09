@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
+
 import './VideoComponent.scss';
 
 export class VideoComponent extends Component {
@@ -25,24 +27,19 @@ export class VideoComponent extends Component {
         </video>
         <ul className="VideoComponent--list" >
           <li className="" href="#">
-            <a href="#">
-              <h1>SHOP</h1>
-            </a>
+            <Link to="/shop">
+              <h1>Shop</h1>
+            </Link>
           </li>
           <li className="" href="#">
-            <a href="#">
-              <h1>LOOKBOOK</h1>
-            </a>
+            <Link to="/product">
+              <h1>Product</h1>
+            </Link>
           </li>
           <li className="" href="#">
-            <a href="#">
-              <h1>BLOG</h1>
-            </a>
-          </li>
-          <li className="" href="#">
-            <a href="#">
-              <h1>ABOUT</h1>
-            </a>
+            <Link to="/login">
+              <h1>Login</h1>
+            </Link>
           </li>
         </ul>
       </div>

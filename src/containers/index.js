@@ -1,7 +1,9 @@
 import DevTools from './DevTools';
-import Root from './Root';
-import ShopActions from './ShopActions';
-import ShopView from './ShopView';
+import App from './App';
 import NotFound from './NotFound';
+import Home from './Home';
+import Product from './Product';
+import Login from './Login';
+import Shop from './Shop';
 
-export { DevTools, Root, ShopActions, ShopView, NotFound };
+export { DevTools, App, NotFound, Home, Shop, Product, Login };
