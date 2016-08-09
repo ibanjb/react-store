@@ -74,8 +74,7 @@ export class HeaderComponent extends Component {
 
   changeMenuBackgroundColor(event) {
     const scrollTop = event.srcElement.body.scrollTop;
-    const itemTranslate = Math.min(0, scrollTop / 3 - 60);
-    if (itemTranslate === 0) {
+    if (scrollTop > 0) {
       this.setState({ backgroundColor: '#bdbdbd' });
     } else {
       this.setState({ backgroundColor: 'transparent' });
@@ -95,11 +94,16 @@ export class HeaderComponent extends Component {
           <AppBar
             title="Menu"
             onLeftIconButtonTouchTap={this.handleDrawerVisibility}
-            style={{ backgroundColor: backColor }}
+            style={{ transition: 'background-color 500ms linear', backgroundColor: backColor }}
+            style={{ transition: 'background-color 500ms linear', backgroundColor: backColor }}
             iconElementRight={
               <div>
                 <IconButton tooltip="Your account">
-                  <ActionAccountCircle primary color={grey50} hoverColor={red500} />
+                  <ActionAccountCircle
+                    primary
+                    color={grey50}
+                    hoverColor={red500}
+                  />
                 </IconButton>
                 <Badge
                   badgeContent={10}
@@ -107,7 +111,10 @@ export class HeaderComponent extends Component {
                   className="HeaderComponent--Badge"
                 >
                   <IconButton tooltip="Shopping cart">
-                    <ActionShoppingCart color={grey50} hoverColor={red500} />
+                    <ActionShoppingCart
+                      color={grey50}
+                      hoverColor={red500}
+                    />
                   </IconButton>
                 </Badge>
               </div>}
