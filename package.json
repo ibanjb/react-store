@@ -56,7 +56,7 @@
     "express": "4.13.4",
     "immutable": "3.7.6",
     "material-ui": "^0.15.3",
-    "moment": "2.11.2",
+    "moment": "^2.19.3",
     "node-uuid": "1.4.7",
     "normalize.css": "3.0.3",
     "react": "0.14.7",
