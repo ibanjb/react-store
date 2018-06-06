@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  poc_jenkins_ci:
+    image: react-poc-app
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+      - 9229:9229
+    command: npm start

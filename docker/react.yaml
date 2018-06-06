@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reactpocapp
+spec:
+  selector:
+    matchLabels:
+      app: reactpocapp
+  replicas: 1
+  template:
+    metadata: 
+      labels:
+        app: reactpocapp
+    spec:
+      containers:
+      - name: reactpocapp
+        image: ciamcontaineracr.azurecr.io/react-poc-app:development
+      imagePullSecrets:
+        - name: ciamcontaineracrreactpocapp
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: reactpocapp-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: reactpocapp
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000    
